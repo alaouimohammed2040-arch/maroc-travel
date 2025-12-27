@@ -1,0 +1,43 @@
+/* Bouton de langue */
+#langToggle {
+    transition: all 0.3s ease;
+}
+
+#langToggle:hover {
+    background: #45a049 !important;
+    transform: scale(1.05);
+}
+
+/* Support RTL pour l'arabe */
+[dir="rtl"] .form-group,
+[dir="rtl"] .commentaire,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] label {
+    text-align: right;
+}
+
+[dir="rtl"] input,
+[dir="rtl"] textarea,
+[dir="rtl"] select {
+    text-align: right;
+    direction: rtl;
+}
+
+[dir="rtl"] .form-group-checkbox {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+[dir="rtl"] .commentaire-header {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .error-message {
+    text-align: right;
+}
+
+/* Animation pour le changement */
+.form-group, h2, h3, label, button {
+    transition: all 0.3s ease;
+}
